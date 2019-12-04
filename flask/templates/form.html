@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>College Team Recommender</title>
+</head>
+
+
+<body style="text-align:center;">
+<h1>College Team Recommender</h1>
+
+<section>
+	<form action="/submit">
+		<p >Select an NFL Team
+		</p>
+			<select name="team">
+			<option value selected="selected"
+			disabled="disabled">Choose a Team
+			</option>
+			<option value ="New England Patriots">New England Patriots</option>
+			<option value ="Baltimore Ravens">Baltimore Ravens</option>
+			<option value ="Houston Texans">Houston Texans</option>
+			<option value ="Kansas City Chiefs">Kansas City Chiefs</option>
+			<option value ="Dallas Cowboys">Dallas Cowboys</option>
+			<option value ="Green Bay Packers">Green Bay Packers</option>
+			<option value ="New Orleans Saints">New Orleans Saints</option>
+			<option value ="San Francisco 49ers">San Francisco 49ers</option>
+			<option value ="Buffalo Bills">Buffalo Bills</option>
+			<option value ="Pittsburgh Steelers">Pittsburgh Steelers</option>
+			<option value ="Tennessee Titans">Tennessee Titans</option>
+			<option value ="Oakland Raiders">Oakland Raiders</option>
+			<option value ="Philadelphia Eagles">Philadelphia Eagles</option>
+			<option value ="Minnesota Vikings">Minnesota Vikings</option>
+			<option value ="Tampa Bay Buccaneers">Tampa Bay Buccaneers</option>
+			<option value ="Seattle Seahawks">Seattle Seahawks</option>
+			<option value ="New York Jets">New York Jets</option>
+			<option value ="Cleveland Browns">Cleveland Browns</option>
+			<option value ="Indianapolis Colts">Indianapolis Colts</option>
+			<option value ="Los Angeles Chargers">Los Angeles Chargers</option>
+			<option value ="Washington Redskins">Washington Redskins</option>
+			<option value ="Chicago Bears">Chicago Bears</option>
+			<option value ="Carolina Panthers">Carolina Panthers</option>
+			<option value ="Los Angeles Rams">Los Angeles Rams</option>
+			<option value ="Miami Dolphins">Miami Dolphins</option>
+			<option value ="Cincinnati Bengals">Cincinnati Bengals</option>
+			<option value ="Jacksonville Jaguars">Jacksonville Jaguars</option>
+			<option value ="Denver Broncos">Denver Broncos</option>
+			<option value ="New York Giants">New York Giants</option>
+			<option value ="Detroit Lions">Detroit Lions</option>
+			<option value ="Atlanta Falcons">Atlanta Falcons</option>
+			<option value ="Arizona Cardinals">Arizona Cardinals</option>
+			</select>
+
+		<p>Select a Year
+		</p>
+			<select name="year">
+			<option value selected="selected"
+			disabled="disabled">Choose a Year
+			</option>
+			<option value =2018>2018</option>
+			<option value =2017>2017</option>
+			<option value =2016>2016</option>
+			<option value =2015>2015</option>
+			<option value =2014>2014</option>
+			</select>
+
+		<p>What is your favorite style of play?
+		</p>
+			<select name="category">
+			<option value selected="selected"
+			disabled="disabled">Choose a style
+			</option>
+			<option value ="general">All Around</option>
+			<option value ="offense">Offense</option>
+			<option value ="defense">Defense</option>
+			<option value ="passing offense">Passing</option>
+			<option value ="rushing offense">Rushing
+			</option>
+			<option value ="passing defense">Pass Defense
+			</option>
+			<option value ="rushing defense">Run Defense
+			</option>
+			</select>
+
+		<p><button type="submit">Submit</button></p>
+	</form>
+</section>
+
+
+
+<section>
+<h4> Based on your input, go check out: </h4>
+<h2>The {{top_year}} {{top_team}} team!</h3>
+</section>
+
+
+
+
+</body>
+</html>

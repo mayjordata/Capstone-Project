@@ -1,5 +1,4 @@
 # ignoring Flask until complete
-flask/
 
 # Jupyter Notebook
 **/.ipynb_checkpoints

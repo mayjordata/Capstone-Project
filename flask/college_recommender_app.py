@@ -136,7 +136,16 @@ def submit():
 
     # return the prediction in the template
     # return "prediction complete"
-    return render_template('form.html', top_team=top_team, top_year=top_year)
+
+
+    # create if statement based off of top_team
+    if top_team == #name team:
+    	logo_name = #name of image
+    elif top_team == #name:
+    	logo_name = #name of image
+    else:
+    	logo_name = 'NFL.jpeg'
+    return render_template('form.html', top_team=top_team, top_year=top_year, result_logo = logo_name)
 
 
 # Display the top 3 results from my recommender and provide a link to the sports reference site to view more stats

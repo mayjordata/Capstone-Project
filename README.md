@@ -32,8 +32,49 @@ I collected offensive and defensive stats for college football dating back to 19
 
 ### Exploratory Data Analysis
 
+I am comparing two different leagues so their statisical peformance varies, on average. Since I am comparing these two, it is important to understand how and what categories differ. To tuly understand the distributions, I created a function that prints out 2 comparative box plots and 2 histograms of each statisical category of choice (a column in my DataFrame) between the NFL and college leagues.
+
+The top findings from these distributions were: 
+* Overall the spread of each statistic are generally wider for college than NFL, this make sense as there is only 32 NFL teams represented per year against over 100 college teams represented per year. This will naturally have more variation in their results.
+* The average of most of the statistics are typically close between both leagues, with the exception of stats in the rushing category, offensive fumbles, & point totals.
+
+<img src="./assets/rush%20att.png">
+
+As seen in the image of above, there is a large descrepancy between the number of the rushing attempts that the NFL takes per game compared to the number of attempts that the college league takes. Because of the large difference in this category the other rushing categories follows this same trend.
+* NFL has a mean of 26 rushing attempts.
+* College has a mean of 39 rushing attempts.
+
+<img src="./assets/fumbles.png">
+
+* NFL has a mean of 1.27 fumbles
+* College has a mean of 0.68 fumbles
+
+This is an interesting find seeing that the NFL runs the ball less so you would assume that they have less opportunites to fumble, in addition to it being more teams in College translating to more teams having more opportunites for fumbles.
+
+<img src="./assets/pass%20att.png">
+
+* NFL has a mean of 35 pass attempts a game.
+* College has a mean of 31 pass attempts a game
+
+As far as passing attempts the mean of both league are closer together with the NFL attempting 4 more passes on average than college football. College football though have a wider spread with some teams attempting up to 60 passes a game, where as in the NFL the most attempts a game is 43.
+
 ### Results
 
+* created a recommender system that compares a single NFL team to the rest of the college football teams.
+* it is capable of comparing teams based off of specific statistical categories. Examples include:
+    * Overall performance - includes all major categories
+    * Offense - includes all categories related to offense (rushing, passing, touchdowns, etc.)
+    * Defense - includes all categories related to defense (opponents rushing, passing, touchdowns, etc.)
+    * Any other categories down to the specifics of only passing, only rushing.
+
+I developed a web application that takes the foundations of my recommender system and inner function and translates this to the user. It takes 3 input from the user: NFL team of interest, season the team played in, and favorite style of play. After taking these 3 arguments, the user is provided with an instant recommended college team and the specific year of that team. 
 
 ## Next Steps
 
+I am very pleased at the results of my college recommender system. I though do believe that it can be greatly improved upon in several ways: 
+* I can add more features outside of statistics, like team success, star power, game attendence and ticket sales, etc. I can find more unique statistics to include as features that accurately depicts and compares a team statistical performance each year.
+* I compared teams across 5 years (2014-2018), I can extend the range of teams to older periods, while making sure the change in team's performance is accounted for as the style of play changes over the decades.
+* create recommenders that solely compare all NFL teams in history to one another and the same for college football. I already have the data readily available so this would be a instant modification to look into.
+
+In addition to the recommender improvements, there are also some improvements that can be made to the application side. Including college team specific content to the user is a great start. When I recommend a team I can provide links to videos, games & events, links to team pages, and also more statistics to chew on. 
+Mostly I would like to be able to provide information on what makes these teams similar and why my recommender thought so. Potentially doing some unsupervised learning can be a great tool to help with this. 

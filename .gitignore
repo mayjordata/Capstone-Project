@@ -5,3 +5,6 @@
 
 #pesky mac
 **/.DS_store
+
+# ignoring modeling notebook for now, until it is improved upon.
+code/Modeling Notebook.ipynb

@@ -88,22 +88,14 @@ def college_recommender2(df, team, year, category = 'all stats', need_scale = Fa
 # initialize the flask app
 app = Flask('demoApp')
 
-### route 1: Intial Message
+### route: user can select their input
 # define the route
 @app.route('/')
 # create the controller
 def home():
+	logo_name = 'cfb-logo.png'
     # return the view
-    # Here I want to display the page with form of questions
-    return "Football is a great sport, I know you love the NFL but lets consider some college Football!"
-
-### route: user can select their input
-# define the route
-@app.route('/form')
-# create the controller
-def form():
-    # return the view
-    return render_template('form.html')
+	return render_template('form.html', result_logo = logo_name)
 
 # I will pull the data from the SQL Database and save it to a DataFrame or just read in the csv
 
@@ -137,14 +129,18 @@ def submit():
     # return the prediction in the template
     # return "prediction complete"
 
-
     # create if statement based off of top_team
-    if top_team == #name team:
-    	logo_name = #name of image
-    elif top_team == #name:
-    	logo_name = #name of image
+    if top_team == 'Wisconsin':
+    	logo_name = 'wisconsin-logo.svg'
+    elif top_team == 'Tulane':
+    	logo_name = 'tulane-logo.jpg'
+    elif top_team == 'Florida State':
+    	logo_name = 'fsu-logo.gif'
+    elif top_team == 'Utah State':
+    	logo_name = 'utahstate-logo.jpg'
     else:
-    	logo_name = 'NFL.jpeg'
+    	logo_name = 'cfb-logo.png'
+
     return render_template('form.html', top_team=top_team, top_year=top_year, result_logo = logo_name)
 
 

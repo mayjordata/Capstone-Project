@@ -76,5 +76,5 @@ I am very pleased at the results of my college recommender system. I though do b
 * I compared teams across 5 years (2014-2018), I can extend the range of teams to older periods, while making sure the change in team's performance is accounted for as the style of play changes over the decades.
 * create recommenders that solely compare all NFL teams in history to one another and the same for college football. I already have the data readily available so this would be a instant modification to look into.
 
-In addition to the recommender improvements, there are also some improvements that can be made to the application side. Including college team specific content to the user is a great start. When I recommend a team I can provide links to videos, games & events, links to team pages, and also more statistics to chew on. 
+In addition to the recommender improvements, there are also some improvements that can be made to the application side. Including college team specific content to the user is a great start. When I recommend a team I can provide links to videos, team events, games, links to team pages, and also more statistics to chew on. 
 Mostly I would like to be able to provide information on what makes these teams similar and why my recommender thought so. Potentially doing some unsupervised learning can be a great tool to help with this. 
